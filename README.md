@@ -3,7 +3,7 @@ Term Project for CPS 510 at Ryerson
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-![](images/510db.png)
+![](img/510db.png)
 
 The Medical Clinic System Consists of 10 relational tables - 
 
