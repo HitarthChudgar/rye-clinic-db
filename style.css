@@ -5,11 +5,14 @@ html,body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .card{
-    margin-top: 3rem !important;
-    margin-right: 1em;
+    margin: 0.6em;
+    -webkit-box-shadow: 10px 10px 60px -42px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 60px -42px rgba(0, 0, 0, 0.55);
+    box-shadow: 10px 10px 60px -42px rgba(0, 0, 0, 0.55);
 }
 
 .card-img-top {

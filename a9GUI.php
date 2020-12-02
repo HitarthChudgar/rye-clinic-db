@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Lab 06</title>
+    <title>Rye-Clinic DB 510</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -19,161 +19,145 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <form method=POST>
-                <div class="row">
-                    <div class="card col-sm" style="width: 25rem;">
-                        <img class="card-img-top" src="img/add.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h3 class="card-title">Create Database</h3>
-                            <hr>
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cDOC"
-                                value="Doctor" />
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <span class="navbar-brand mb-0 h1"><strong>Rye-Clinic Database</strong></span>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <form method=POST>
+            <div class="row">
+                <div class="shadow-sm card col-sm" style="width: 25rem;">
+                    <img class="card-img-top" src="img/add.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">Create Database</h3>
+                        <hr>
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cDOC" value="Doctor" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cHC"
-                                value="Healthcard" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cHC"
+                            value="Healthcard" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cP"
-                                value="Patient" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cP" value="Patient" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cT"
-                                value="Treats" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cT" value="Treats" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cET"
-                                value="Exam Type" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cET"
+                            value="Exam Type" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cEX" value="Exam" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cEX" value="Exam" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cREF"
-                                value="Referral" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cREF"
+                            value="Referral" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cRES"
-                                value="Results" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cRES" value="Results" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cPRE"
-                                value="Prescription" />
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cPRE"
+                            value="Prescription" />
 
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="cAPPT"
-                                value="Appointment" />
-                        </div>
-                    </div>
-
-                    <div class="card col-sm" style="width: 25rem;">
-                        <img class="card-img-top" src="img/populate.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Populate Database</h3>
-                            <hr>
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iDOC"
-                                value="Doctor" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iHC"
-                                value="Healthcard" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iP"
-                                value="Patient" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iT"
-                                value="Treats" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iET"
-                                value="Exam Type" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iEX" value="Exam" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iREF"
-                                value="Referral" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iRES"
-                                value="Results" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iPRE"
-                                value="Prescription" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="iAPPT"
-                                value="Appointment" />
-                        </div>
-                    </div>
-
-                    <div class="card col-sm" style="width: 25rem;">
-                        <img class="card-img-top" src="img/delete.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Delete Database</h3>
-                            <hr>
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dDOC"
-                                value="Doctor" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dHC"
-                                value="Healthcard" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dP"
-                                value="Patient" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dT"
-                                value="Treats" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dET"
-                                value="Exam Type" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dEX" value="Exam" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dREF"
-                                value="Referral" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dRES"
-                                value="Results" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dPRE"
-                                value="Prescription" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="dAPPT"
-                                value="Appointment" />
-                        </div>
-                    </div>
-
-                    <div class="card col-sm" style="width: 25rem;">
-                        <img class="card-img-top" src="img/view.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>View Database</h3>
-                            <hr>
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vDOC"
-                                value="Doctor" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vHC"
-                                value="Healthcard" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vP"
-                                value="Patient" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vT"
-                                value="Treats" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vET"
-                                value="Exam Type" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vEX" value="Exam" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vREF"
-                                value="Referral" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vRES"
-                                value="Results" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vPRE"
-                                value="Prescription" />
-
-                            <input type="submit" type="button" class="btn btn-primary btn-sm" name="vAPPT"
-                                value="Appointment" />
-                        </div>
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="cAPPT"
+                            value="Appointment" />
                     </div>
                 </div>
-            </form>
-            <br>
-        </div>
+
+                <div class="card col-sm" style="width: 25rem;">
+                    <img class="card-img-top" src="img/populate.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Populate Database</h3>
+                        <hr>
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iDOC" value="Doctor" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iHC"
+                            value="Healthcard" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iP" value="Patient" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iT" value="Treats" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iET"
+                            value="Exam Type" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iEX" value="Exam" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iREF"
+                            value="Referral" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iRES" value="Results" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iPRE"
+                            value="Prescription" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="iAPPT"
+                            value="Appointment" />
+                    </div>
+                </div>
+
+                <div class="card col-sm" style="width: 25rem;">
+                    <img class="card-img-top" src="img/delete.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Delete Database</h3>
+                        <hr>
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dDOC" value="Doctor" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dHC"
+                            value="Healthcard" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dP" value="Patient" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dT" value="Treats" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dET"
+                            value="Exam Type" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dEX" value="Exam" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dREF"
+                            value="Referral" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dRES" value="Results" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dPRE"
+                            value="Prescription" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="dAPPT"
+                            value="Appointment" />
+                    </div>
+                </div>
+
+                <div class="card col-sm" style="width: 25rem;">
+                    <img class="card-img-top" src="img/view.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>View Database</h3>
+                        <hr>
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vDOC" value="Doctor" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vHC"
+                            value="Healthcard" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vP" value="Patient" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vT" value="Treats" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vET"
+                            value="Exam Type" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vEX" value="Exam" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vREF"
+                            value="Referral" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vRES" value="Results" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vPRE"
+                            value="Prescription" />
+
+                        <input type="submit" type="button" class="btn btn-primary btn-sm" name="vAPPT"
+                            value="Appointment" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
     </div>
-    <div class="container">
-        <div class="d-flex justify-content-center" style="margin-top: 1rem">
-            <?php
+    <div class="d-flex justify-content-center" style="margin-top: 1rem">
+        <?php
       $servername = "localhost";
       $username = "root";
       $password = "";
@@ -340,7 +324,7 @@
         $viewDoctors = "SELECT * FROM doctors";
         $resultDoctors = $conn->query($viewDoctors);
         if(mysqli_num_rows($resultDoctors) > 0){
-          echo '<table class="table table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
             echo "<thead>";  
             echo "<tr>";
                   echo '<th scope="col">First Name</th>';
@@ -405,7 +389,7 @@
         $viewHC = "SELECT * FROM healthcard";
         $resultHC = $conn->query($viewHC);
         if(mysqli_num_rows($resultHC) > 0){
-          echo '<table class="table table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
               echo "<thead>";
               echo "<tr>";
                   echo '<th scope="col">Healthcard</th>';
@@ -468,7 +452,7 @@
         $viewPatient = "SELECT * FROM patient";
         $resultPatient = $conn->query($viewPatient);
         if(mysqli_num_rows($resultPatient) > 0){
-          echo '<table class="table table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
               echo "<thead>";
               echo "<tr>";
                   echo '<th scope="col">Healthcard</th>';
@@ -527,7 +511,7 @@
         $viewPatient = "SELECT * FROM exam_type";
         $resultHC = $conn->query($viewPatient);
         if(mysqli_num_rows($resultHC) > 0){
-          echo '<table class="table table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
               echo"<thead>";
               echo "<tr>";
                   echo '<th scope="col">Exam Type</th>';
@@ -584,7 +568,7 @@
         $viewExam = "SELECT * FROM exam";
         $resultExam = $conn->query($viewExam);
         if(mysqli_num_rows($resultExam) > 0){
-          echo '<table class="table table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
               echo"<thead>";
               echo "<tr>";
                   echo '<th scope="col">Patient ID</th>';
@@ -644,16 +628,19 @@
         $viewTreats = "SELECT * FROM treats";
         $resultTreats = $conn->query($viewTreats);
         if(mysqli_num_rows($resultTreats) > 0){
-          echo "<table>";
+          echo '<table class="table table-dark" style="margin-top:1rem">';
+              echo "<thead>";
               echo "<tr>";
-                  echo "<th>Doctor ID</th>";
-                  echo "<th>Patient ID</th>";
+                  echo '<th scope="col">Doctor ID</th>';
+                  echo '<th scope="col">Patient ID</th>';
               echo "</tr>";
             while($row = mysqli_fetch_array($resultTreats)){
+                echo "<tbody>";
                 echo "<tr>";
                     echo "<td>" . $row['doctor_id'] . "</td>";
-                    echo "<td>" . $row['patient_id'] . "</td>";
+                    echo "<td>" . $row['patient_id'] . "</td>";    
                 echo "</tr>";
+                echo "</tbody>";
             }
             echo "</table>";
         }
@@ -698,7 +685,7 @@
         $viewRef = "SELECT * FROM referral";
         $resultRef = $conn->query($viewRef);
         if(mysqli_num_rows($resultRef) > 0){
-          echo '<table class="table-striped">';
+          echo '<table class="table table-dark" style="margin-top:1rem">';
               echo"<thead>";
               echo "<tr>";
                   echo '<th scope="col">Exam ID</th>';
@@ -759,18 +746,22 @@
         $viewRes = "SELECT * FROM results";
         $resultRes = $conn->query($viewRes);
         if(mysqli_num_rows($resultRes) > 0){
-          echo "<table>";
+          echo '<table class="table table-dark" style="margin-top:1rem">';
+              echo"<thead>";
               echo "<tr>";
-                  echo "<th>Exan ID</th>";
-                  echo "<th>Doctor ID</th>";
-                  echo "<th>Result</th>";
+                  echo '<th scope="col">Exan ID</th>';
+                  echo '<th scope="col">Doctor ID</th>';
+                  echo '<th scope="col">Result</th>';
               echo "</tr>";
+              echo "</thead>";
             while($row = mysqli_fetch_array($resultRes)){
+                echo "<tbody>";    
                 echo "<tr>";
                     echo "<td>" . $row['exam_id'] . "</td>";
                     echo "<td>" . $row['doctor_id'] . "</td>";
                     echo "<td>" . $row['exam_result'] . "</td>";
                 echo "</tr>";
+                echo"</tbody>";
             }
             echo "</table>";
         }
@@ -817,7 +808,8 @@
         $viewPre = "SELECT * FROM prescription";
         $resultPre = $conn->query($viewPre);
         if(mysqli_num_rows($resultPre) > 0){
-          echo "<table>";
+          echo '<table class="table table-dark" style="margin-top:1rem">';
+              echo "<thead>";
               echo "<tr>";
                   echo "<th>Doctor ID</th>";
                   echo "<th>Patient ID</th>";
@@ -825,13 +817,16 @@
                   echo "<th>Medication</th>";
                   echo "<th>Dosage</th>";
               echo "</tr>";
+              echo "</thead>";
             while($row = mysqli_fetch_array($resultPre)){
+                echo "<tbody>";
                 echo "<tr>";
                     echo "<td>" . $row['doctor_id'] . "</td>";
                     echo "<td>" . $row['patient_id'] . "</td>";
                     echo "<td>" . $row['result_id'] . "</td>";
                     echo "<td>" . $row['medication'] . "</td>";
                     echo "<td>" . $row['dosage'] . "</td>";
+                echo "</tbody>";
                 echo "</tr>";
             }
             echo "</table>";
@@ -880,21 +875,25 @@
         $viewAppt = "SELECT * FROM appointment";
         $resultAppt = $conn->query($viewAppt);
         if(mysqli_num_rows($resultAppt) > 0){
-          echo "<table>";
+          echo '<table class="table table-dark" style="margin-top:1rem">';
+              echo "<thead>";
               echo "<tr>";
-                  echo "<th>Date</th>";
-                  echo "<th>Time</th>";
-                  echo "<th>Doctor ID</th>";
-                  echo "<th>Patient ID</th>";
-                  echo "<th>Exam ID</th>";
+                  echo '<th scope="col">Date</th>';
+                  echo '<th scope="col">Time</th>';
+                  echo '<th scope="col">Doctor ID</th>';
+                  echo '<th scope="col">Patient ID</th>';
+                  echo '<th scope="col">Exam ID</th>';
               echo "</tr>";
+              echo "</thead>";
             while($row = mysqli_fetch_array($resultAppt)){
+                echo "<tbody>";
                 echo "<tr>";
                     echo "<td>" . $row['appointment_date'] . "</td>";
                     echo "<td>" . $row['appointment_time'] . "</td>";
                     echo "<td>" . $row['doctor_id'] . "</td>";
                     echo "<td>" . $row['patient_id'] . "</td>";
                     echo "<td>" . $row['exam_id'] . "</td>";
+                echo "</tbody>";    
                 echo "</tr>";
             }
             echo "</table>";
@@ -906,7 +905,6 @@
       
       $conn->close();
     ?>
-        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
