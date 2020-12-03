@@ -1,15 +1,13 @@
 <html>
 
 <head>
-    <title>Rye-Clinic DB 510</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>Rye-Clinic DB 510</title>
     <style>
-        img {
-            max-width: 200px;
-        }
-
         table,
         tr,
         td {
@@ -23,9 +21,9 @@
         <span class="navbar-brand mb-0 h1"><strong>Rye-Clinic Database</strong></span>
     </nav>
     <div class="d-flex justify-content-center">
-        <form method=POST>
+        <form method="POST">
             <div class="row">
-                <div class="shadow-sm card col-sm" style="width: 25rem;">
+                <div class="shadow-sm card col-sm">
                     <img class="card-img-top" src="img/add.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="card-title">Create Database</h3>
@@ -57,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="card col-sm" style="width: 25rem;">
+                <div class="card col-sm">
                     <img class="card-img-top" src="img/populate.png" alt="Card image cap">
                     <div class="card-body">
                         <h3>Populate Database</h3>
@@ -89,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="card col-sm" style="width: 25rem;">
+                <div class="card col-sm">
                     <img class="card-img-top" src="img/delete.png" alt="Card image cap">
                     <div class="card-body">
                         <h3>Delete Database</h3>
@@ -121,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="card col-sm" style="width: 25rem;">
+                <div class="card col-sm">
                     <img class="card-img-top" src="img/view.png" alt="Card image cap">
                     <div class="card-body">
                         <h3>View Database</h3>
