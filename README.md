@@ -41,3 +41,12 @@ Adding your database to reference for connection
 $conn = mysqli_connect($servername, $username, $password, "databasename_cs");
 ```
 
+### How to use
+
+Follow this order to check the functionality - 
+
+-   **Create the DB table**
+-   **Insert into DB table**
+-   **View the DB table**
+-   **Delete the DB table**
+
